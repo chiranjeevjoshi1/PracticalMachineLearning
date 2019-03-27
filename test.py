@@ -65,10 +65,9 @@ print(confidence)
 
 #Implementing linear regression
 
-clf = LinearRegression()
+clf = LinearRegression(n_jobs=-1)
 clf.fit(X_train,y_train)
 confidence = clf.score(X_test,y_test)
 print(confidence)
 
 #%%
-
